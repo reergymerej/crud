@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 This is the crud index.
+  ul
+    each doc, i in docs
+      li #{doc.name}
+        a(href="/crud/#{doc._id}") view
